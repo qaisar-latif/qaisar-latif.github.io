@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-07-12 Sun 23:46 -->
+<!-- 2020-07-13 Mon 00:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Greetings to you!</title>
@@ -11,14 +11,13 @@
 <meta name="author" content="QL" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
- .title  { text-align: center;
-           margin-bottom: .2em; color:red}
- .subtitle { text-align: center;
-             font-size: medium;
-             font-weight: bold;
-             margin-top:0;
-             color:blue; }
- .todo   { font-family: monospace; color: red; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
   .done   { font-family: monospace; color: green; }
   .priority { font-family: monospace; color: orange; }
   .tag    { background-color: #eee; font-family: monospace;
@@ -55,12 +54,99 @@
   }
   pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
   /* add a generic configuration mode; LaTeX export needs an additional
      (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
   pre.src-conf:before { content: 'Configuration File'; }
 
-  table { border-collapse:collapse; background-color:yellow;}
+  table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
@@ -148,20 +234,20 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul class="table-of-contents-lists" type="none">
-<li><a href="#orgaef633e">1. First Level One Heading</a>
+<li><a href="#first-level-head-one">1. First Level One Heading</a>
 <ul class="table-of-contents-lists" type="none">
-<li><a href="#org2cdae00">1.1. First Level Two Heading</a>
+<li><a href="#second-level-head-two">1.1. First Level Two Heading</a>
 <ul class="table-of-contents-lists" type="none">
-<li><a href="#org46ed376">1.1.1. First Level Three Heading</a></li>
+<li><a href="#third-level-head-one">1.1.1. First Level Three Heading</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org42b292a">2. Second Level One Heading</a>
+<li><a href="#first-level-head-2">2. Second Level One Heading</a>
 <ul class="table-of-contents-lists" type="none">
-<li><a href="#org641db5a">2.1. Second Level Two Heading</a>
+<li><a href="#second-level-head-2">2.1. Second Level Two Heading</a>
 <ul class="table-of-contents-lists" type="none">
-<li><a href="#org737ff00">2.1.1. Second Level Three Heading</a></li>
+<li><a href="#third-level-head-2">2.1.1. Second Level Three Heading</a></li>
 </ul>
 </li>
 </ul>
@@ -169,17 +255,17 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaef633e" class="outline-2">
-<h2 id="orgaef633e"><span class="section-number-2">1</span> First Level One Heading</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-org6862496" class="outline-2">
+<h2 id="first-level-head-one"><a id="org6862496"></a><span class="section-number-2">1</span> First Level One Heading</h2>
+<div class="outline-text-2" id="text-first-level-head-one">
 <p>
 Some random text.
 </p>
 </div>
 
-<div id="outline-container-org2cdae00" class="outline-3">
-<h3 id="org2cdae00"><span class="section-number-3">1.1</span> First Level Two Heading</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org7c6d74f" class="outline-3">
+<h3 id="second-level-head-two"><a id="org7c6d74f"></a><span class="section-number-3">1.1</span> First Level Two Heading</h3>
+<div class="outline-text-3" id="text-second-level-head-two">
 <p>
 In 1956, Knuth received a scholarship to the Case Institute of
 Technology (now part of Case Western Reserve University) in Cleveland,
@@ -192,9 +278,9 @@ school, because he believed he could do it better.
 </p>
 </div>
 
-<div id="outline-container-org46ed376" class="outline-4">
-<h4 id="org46ed376"><span class="section-number-4">1.1.1</span> First Level Three Heading</h4>
-<div class="outline-text-4" id="text-1-1-1">
+<div id="outline-container-org0e09b59" class="outline-4">
+<h4 id="third-level-head-one"><a id="org0e09b59"></a><span class="section-number-4">1.1.1</span> First Level Three Heading</h4>
+<div class="outline-text-4" id="text-third-level-head-one">
 <p>
 In 1958, Knuth created a program to help his school&rsquo;s basketball team
 win their games. He assigned &ldquo;values&rdquo; to players in order to gauge
@@ -206,9 +292,9 @@ and CBS Evening News later reported on.
 </div>
 </div>
 
-<div id="outline-container-org42b292a" class="outline-2">
-<h2 id="org42b292a"><span class="section-number-2">2</span> Second Level One Heading</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgd25a245" class="outline-2">
+<h2 id="first-level-head-2"><a id="orgd25a245"></a><span class="section-number-2">2</span> Second Level One Heading</h2>
+<div class="outline-text-2" id="text-first-level-head-2">
 <p>
 Knuth was one of the founding editors of Case Institute&rsquo;s Engineering
 and Science Review, which won a national award as best technical
@@ -232,18 +318,18 @@ faculty who considered his work exceptionally outstanding.
 </pre>
 </div>
 
-<div id="outline-container-org641db5a" class="outline-3">
-<h3 id="org641db5a"><span class="section-number-3">2.1</span> Second Level Two Heading</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org42ace48" class="outline-3">
+<h3 id="second-level-head-2"><a id="org42ace48"></a><span class="section-number-3">2.1</span> Second Level Two Heading</h3>
+<div class="outline-text-3" id="text-second-level-head-2">
 <p>
 In 1963, with mathematician Marshall Hall as his adviser, he earned a
 PhD in mathematics from the California Institute of Technology.
 </p>
 </div>
 
-<div id="outline-container-org737ff00" class="outline-4">
-<h4 id="org737ff00"><span class="section-number-4">2.1.1</span> Second Level Three Heading</h4>
-<div class="outline-text-4" id="text-2-1-1">
+<div id="outline-container-org73ecfdd" class="outline-4">
+<h4 id="third-level-head-2"><a id="org73ecfdd"></a><span class="section-number-4">2.1.1</span> Second Level Three Heading</h4>
+<div class="outline-text-4" id="text-third-level-head-2">
 <p>
 Knuth was one of the founding editors of Case Institute&rsquo;s Engineering
 and Science Review, which won a national award as best technical
@@ -323,7 +409,7 @@ technical magazine in 1959.</li>
 Now I need to add a table here.
 </p>
 
-<table id="orgffd06a8" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="color:red">
+<table id="org62d75a8" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="color:red">
 <caption class="t-above"><span class="table-number">Table 1:</span> A Random Table Of Names And Numbers</caption>
 
 <colgroup>
