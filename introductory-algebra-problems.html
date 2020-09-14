@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-09-14 Mon 18:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Introductory Algebra (CO-503): List of Problems</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Qaisar Latif" />
+<meta name="keywords" content="Webpage, Information" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style> body { background: lightgray } </style>
+<style> .figure p {text-align: left;}</style>
+<style> .title {text-align: left;} </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Introductory Algebra (CO-503): List of Problems
+<br />
+<span class="subtitle">Dr. Qaisar Latif</span>
+</h1>
+<p>
+<a href="./index.html">Home Page of QL</a>
+</p>
+
+<p>
+<a href="introductory-algebra.html">Introductory Algebra Main Page</a>
+</p>
+
+<p>
+This page contains only a small part of problems that the students are
+suggested to solve.  It doesn&rsquo;t mean that these are very important,
+but that these are typed for some reason.  Extra pages, containing a
+lot of problems, are distributed in the lectures.
+</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul class="table-of-contents-lists" type="none">
+<li><a href="#intro-algebra-general-information">1. Week of Tuesday, 01. September 2020</a></li>
+<li><a href="#orgf89e19b">2. Week of Monday, 07. September 2020</a></li>
+<li><a href="#orgf6298f5">3. Additional Files</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3db8d19" class="outline-2">
+<h2 id="intro-algebra-general-information"><a id="org3db8d19"></a><span class="section-number-2">1</span> Week of Tuesday, 01. September 2020</h2>
+<div class="outline-text-2" id="text-intro-algebra-general-information">
+<p>
+Wants to solve more problems? Consider then, some of the standard,
+problems.
+</p>
+</div>
+<div id="outline-container-org66ec0a8" class="outline-3">
+<h3 id="hw1-problem-1"><a id="org66ec0a8"></a><span class="section-number-3">1.1</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-1">
+<p>
+Let \(H\) and \(K\) be subgroups of a group \(G\).
+</p>
+<ol class="org-ol">
+<li>Show by example that \(H\cup K\) need not be a subgroup of \(G\).</li>
+<li>Prove that \(H\cup K\) is a subgroup of \(G\) if and only if either
+\(H\subseteq K\) or \(K\subseteq H\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf7e3665" class="outline-3">
+<h3 id="hw1-problem-2"><a id="orgf7e3665"></a><span class="section-number-3">1.2</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-2">
+<ol class="org-ol">
+<li>Let \(H\) and \(K\) be a subgroups of a group \(G\).  Prove that
+\(H\cap K\) is a subgroup of \(G\).</li>
+<li>Let \(\{H_i\}\) be a collection of subgroups of \(G\).  Prove that
+\(\cap_i H_i\) is a subgroup of \(G\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgff2fe2d" class="outline-3">
+<h3 id="hw1-problem-3"><a id="orgff2fe2d"></a><span class="section-number-3">1.3</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-3">
+<p>
+Let \(G\) be a group. Define
+</p>
+\begin{equation}
+  \nonumber
+  Z(G) := \Big\{ x\in G: xg=gx \text{ for all } g\in G\}	
+\end{equation}
+<p>
+Show that \(Z(G)\) is a subgroup of \(G\).
+</p>
+</div>
+</div>
+<div id="outline-container-org39d7e58" class="outline-3">
+<h3 id="hw1-problem-4"><a id="org39d7e58"></a><span class="section-number-3">1.4</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-4">
+<p>
+Let \(G\) and \(H\) be two groups. Define the the law of composition
+on the product of sets \(G\times H\) by:
+</p>
+\begin{equation}
+  \nonumber
+  (a,b)\cdot (c,d) := (ac,bd)\,.
+\end{equation}
+<p>
+Show that \(G\times H\) is a group together with this law of
+composition.  \(G\times H\) is an abelian group if and only if both
+\(G\) and \(H\) are abelian groups.
+</p>
+</div>
+</div>
+<div id="outline-container-orga9b8c37" class="outline-3">
+<h3 id="hw1-problem-5"><a id="orga9b8c37"></a><span class="section-number-3">1.5</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-5">
+<p>
+Let \(G_1\) and \(G_2\) be two groups, and \(H_1<G_1\) and
+\(H_2<G_2\).  Show that \(H_1\times H_2 < G_1\times G_2\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgf168a6b" class="outline-3">
+<h3 id="hw1-problem-6"><a id="orgf168a6b"></a><span class="section-number-3">1.6</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-6">
+<p>
+Let \(H\) and \(K\) be subgroups of an abelian group \(G\) and let
+</p>
+\begin{equation}
+  \nonumber
+  HK:=\Big\{hk:h\in H, k\in K\Big\}
+\end{equation}
+<p>
+Prove that \(HK\) is a subgroup of \(G\).
+</p>
+</div>
+</div>
+<div id="outline-container-org9d81352" class="outline-3">
+<h3 id="hw1-problem-7"><a id="org9d81352"></a><span class="section-number-3">1.7</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-7">
+<p>
+Let \(H\) be a subgroup of a group \(G\) and, for (fixed) \(a\in
+G\). Fix the notation
+</p>
+\begin{equation}
+  \nonumber
+  aHa^{-1} := \Big\{aha^{-1}: h\in H\Big\}\,.
+\end{equation}
+<p>
+Prove that \(aHa^{-1}\) is a subgroup of \(G\).
+</p>
+</div>
+</div>
+<div id="outline-container-org27a7727" class="outline-3">
+<h3 id="hw1-problem-8"><a id="org27a7727"></a><span class="section-number-3">1.8</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-8">
+<ol class="org-ol">
+<li><p>
+Let \(G\) be a group.  Fix \(a\in G\).  Define the centralizer of
+\(a\) in \(G\) as the following set
+</p>
+\begin{equation}
+  \nonumber
+  C(a):= \Big\{ x\in G: ax=xa\Big\}\,.
+\end{equation}
+<p>
+Show that \(C(a)\) is a subgroup of \(G\).
+</p></li>
+<li><p>
+Define the center of the group \(G\) to be the following set
+</p>
+\begin{equation}
+\nonumber
+Z(G) := \Big\{ a\in G: ga=ag \text{ for all } g \in G\}\,.
+\end{equation}
+<p>
+Show that \(Z(G)<G\)
+</p></li>
+<li><p>
+Prove that
+</p>
+\begin{equation}
+\nonumber
+Z(G) = \bigcap_{g\in G} C(g)\,.
+\end{equation}</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org41a48f1" class="outline-3">
+<h3 id="hw1-problem-9"><a id="org41a48f1"></a><span class="section-number-3">1.9</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-9">
+<p>
+List the subgroup of
+</p>
+<ol class="org-ol">
+<li>\(\mathbb{Z}/4 \mathbb{Z}\).</li>
+<li>\(\mathbb{Z}/5 \mathbb{Z}\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6b88124" class="outline-3">
+<h3 id="hw1-problem-10"><a id="org6b88124"></a><span class="section-number-3">1.10</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-10">
+<p>
+Let \(G\) be a group in which \(g^2=e\) for all \(g\in G\).  Prove
+that \(G\) is abelian.
+</p>
+</div>
+</div>
+<div id="outline-container-org9330d2b" class="outline-3">
+<h3 id="hw1-problem-11"><a id="org9330d2b"></a><span class="section-number-3">1.11</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-11">
+<p>
+Let \(a,b,c\) be elements of the group \(G\).  Find the solutions
+\(x\) of the equations
+</p>
+<ol class="org-ol">
+<li>\(axa^{-1}=e\).</li>
+<li>\(axa^{-1}=a\).</li>
+<li>\(axb=c\).</li>
+<li>\(ba^{-1}xab^{-1}=ba\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org41bf0d4" class="outline-3">
+<h3 id="hw1-problem-12"><a id="org41bf0d4"></a><span class="section-number-3">1.12</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-12">
+<p>
+Let \(G\) be a group and \(c\) be a fixed element of \(G\).  Define a new operation \(*\) on \(G\) by
+</p>
+\begin{equation}
+  \nonumber
+  x*y := xc^{-1}y\,.
+\end{equation}
+<p>
+for all \(x\) and \(y\) in \(G\).  Prove that \(G\) is a group under
+the operation \(*\).
+</p>
+</div>
+</div>
+<div id="outline-container-org33c9540" class="outline-3">
+<h3 id="hw1-problem-13"><a id="org33c9540"></a><span class="section-number-3">1.13</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-13">
+<p>
+Let \(G\) be a group in which \((xy)^2=x^2y^2\) for all \(x,y\in G\).
+Prove that \(G\) is abelian.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb1b2a34" class="outline-3">
+<h3 id="hw1-problem-14"><a id="orgb1b2a34"></a><span class="section-number-3">1.14</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-14">
+<p>
+Let \(x\) and \(g\) be elements of \(G\).  Prove, using mathematical induction, that for all positive integers \(k\)
+</p>
+\begin{equation}
+  \nonumber
+  (x^ {-1}gx)^k = x^{-1}g^kx\,.
+\end{equation}
+<p>
+Deduce that \(g\) and \(x^{-1}gx\) have the same order.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbb84709" class="outline-3">
+<h3 id="hw1-problem-15"><a id="orgbb84709"></a><span class="section-number-3">1.15</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-15">
+<p>
+Let \((G,+)\) be a group, not necessarily abelian, and \(S\) a nonempty
+set, and \(M(S,G)\) the set of all functions \(f:S\to G\).  Define the
+law of composition on \(M(S,G)\) by:
+</p>
+\begin{equation}
+  \nonumber
+  (f+g)(s) := f(s)+g(s)\,.
+\end{equation}
+<p>
+Prove that \(M(S,G)\) is a group, which is abelian if \(G\) is.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf8dbea2" class="outline-3">
+<h3 id="hw1-problem-16"><a id="orgf8dbea2"></a><span class="section-number-3">1.16</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-16">
+<p>
+Define an equivalence relation \(\sim\) on \(\mathbb{Q}\) by: \(a,b\in
+\mathbb{Q},\ a\sim b \Leftrightarrow a-b\in \mathbb{Z}\).
+</p>
+<ol class="org-ol">
+<li>Show that \( \sim\) is an equivalence relation on \(\mathbb{Q}\).</li>
+<li>The set of equivalence classes defined by above \(\sim\), denoted
+here with \(\mathbb{Q}/\mathbb{Z}\), is an infinite abelian group.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb821b6e" class="outline-3">
+<h3 id="hw1-problem-17"><a id="orgb821b6e"></a><span class="section-number-3">1.17</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-17">
+<p>
+If \(G\) is a group, \(a,b\) in \(G\) and \(bab^{-1}=a^{r}\) for some
+\(r\in \mathbb{N}\), then \(b^j a b^{-j}=a^{r^j}\).
+</p>
+</div>
+</div>
+<div id="outline-container-org4dfcad3" class="outline-3">
+<h3 id="hw1-problem-18"><a id="org4dfcad3"></a><span class="section-number-3">1.18</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-18">
+<p>
+Let \(G\) be a group such that there are three consecutive integers
+for which \((ab)^n=a^nb^n\) for all \(a,b\in G\).  Prove that \(G\) is
+abelian.
+</p>
+</div>
+</div>
+<div id="outline-container-org7762852" class="outline-3">
+<h3 id="hw1-problem-19"><a id="org7762852"></a><span class="section-number-3">1.19</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-19">
+<p>
+If \(G\) is a finite group of even order, then there is an element
+\(a\in G\) of order \(2\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgced9030" class="outline-3">
+<h3 id="hw1-problem-20"><a id="orgced9030"></a><span class="section-number-3">1.20</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-20">
+<p>
+Let \(G\) be a non empty finite set with an associative law of
+composition such that for all \(a,b,c\in G\) the condition
+\(ab=ac\implies b=c\) and \(ba=ca\implies b=c\).  Then \(G\) is a
+group.  Show that the conclusion may be false if \(G\) is infinite.
+</p>
+</div>
+</div>
+<div id="outline-container-org8d1b104" class="outline-3">
+<h3 id="hw1-problem-21"><a id="org8d1b104"></a><span class="section-number-3">1.21</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-21">
+<p>
+Determine which of the following binary operations are associative:
+the operation \(*\) on
+</p>
+<ol class="org-ol">
+<li>\(\mathbb{Z}\) defined by \(a*b:=a-b\).</li>
+<li>\(\mathbb{R}\) defined by \(a*b:=a+b+ab\).</li>
+<li>\(\mathbb{Q}\) defined by \(a*b:=(a+b)/5\).</li>
+<li>\(\mathbb{Z}\times \mathbb{Z}\) defined by
+\((a,b)*(c,d):=(ad+bc,bd)\).</li>
+<li>\(\mathbb{Q}\setminus \{0\}\) defined by \(a*b:=a/b\).</li>
+</ol>
+<p>
+Which of the above binary operations are commutative?
+</p>
+</div>
+</div>
+<div id="outline-container-org9891b55" class="outline-3">
+<h3 id="hw1-problem-22"><a id="org9891b55"></a><span class="section-number-3">1.22</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-22">
+<p>
+Prove that the addition in \(\mathbb{Z}/k \mathbb{Z}\) is
+associative.
+</p>
+
+<p>
+(You may have to recall the definitions from the lecture and explain
+what the elements really are.)
+</p>
+</div>
+</div>
+<div id="outline-container-orgaaa0824" class="outline-3">
+<h3 id="hw1-problem-23"><a id="orgaaa0824"></a><span class="section-number-3">1.23</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-23">
+<p>
+Let \(n\) be a fixed integer, and \(G:=\{z\in \mathbb{C}: z^n=1\}\).
+Prove that \(G\), with the multiplication of complex numbers, is a
+group.
+</p>
+</div>
+</div>
+<div id="outline-container-org7ddcb31" class="outline-3">
+<h3 id="hw1-problem-24"><a id="org7ddcb31"></a><span class="section-number-3">1.24</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-24">
+<p>
+Find the orders of each of the elements of the group
+\(\mathbb{Z}/12\mathbb{Z}\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgf7f9b06" class="outline-3">
+<h3 id="hw1-problem-25"><a id="orgf7f9b06"></a><span class="section-number-3">1.25</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-25">
+<p>
+Let \(G\) be a group and \(x\in G\) with \(x^n=1\). Show that
+\(x^{-1}=x^{n-1}\).
+</p>
+</div>
+</div>
+<div id="outline-container-org2fabea3" class="outline-3">
+<h3 id="hw1-problem-26"><a id="org2fabea3"></a><span class="section-number-3">1.26</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-26">
+<p>
+Let \(G\) be a group.  Prove that for any choice of elements
+\(a_1,a_2,\ldots,a_n\in G\)
+</p>
+\begin{equation}
+  \nonumber
+  (a_1a_2\cdots a_n)^{-1} = a_n^{-1}\cdots a_2^{-1}a_1^{-1}\,.
+\end{equation}
+</div>
+</div>
+<div id="outline-container-org9c694ce" class="outline-3">
+<h3 id="hw1-problem-27"><a id="org9c694ce"></a><span class="section-number-3">1.27</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-27">
+<p>
+Let \(G\) be a group and \(a,b\in G\).  Prove that \(xy=yx\) if and
+only if \(y^{-1}xy=x\) if and only if \(x^{-1}y^{-1}xy=1\).
+</p>
+</div>
+</div>
+<div id="outline-container-org6f8521a" class="outline-3">
+<h3 id="hw1-problem-28"><a id="org6f8521a"></a><span class="section-number-3">1.28</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-28">
+<p>
+Let \(G\) and \(m,n\in \mathbb{N}\). Prove that
+</p>
+<ol class="org-ol">
+<li><a id="org9668c1e"></a>\(x^{m+n}=x^m x^n\).</li>
+<li>\((x^m)^n = x^{mn}\).</li>
+<li>\((x^m)^{-1}=x^{-m}\).</li>
+<li>Establish part <a href="#org9668c1e">1</a> for all integers.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org25e8aa5" class="outline-3">
+<h3 id="hw1-problem-29"><a id="org25e8aa5"></a><span class="section-number-3">1.29</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-29">
+<p>
+Let \(G\) be a group.  Show that any element \(x\) in \(G\) and its
+inverse \(x^{-1}\) have the same order.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc738960" class="outline-3">
+<h3 id="hw1-problem-30"><a id="orgc738960"></a><span class="section-number-3">1.30</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-30">
+<p>
+Let \(G\) be a group and \(a,b\) be commuting elements in it, i.e.,
+\(ab=ba\).  Prove that (using mathematical induction)
+\((ab)^n=a^nb^n\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgd03dd76" class="outline-3">
+<h3 id="hw1-problem-31"><a id="orgd03dd76"></a><span class="section-number-3">1.31</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-31">
+<p>
+Let \(G\) be a group and \(a,b\in G\).  Recall that the order of an
+element is the smallest positive integer \(n\) such that \(a^n=e\),
+where \(e\) is the identity element.  Prove that
+</p>
+<ol class="org-ol">
+<li><a id="org446d491"></a>The order of \(b\) and
+\(aba^{-1}\) is the same.</li>
+<li>The order of \(ab\) and \(ba\) is the same. [Hint: Try using part
+<a href="#org446d491">1</a>]</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga06b5a9" class="outline-3">
+<h3 id="hw1-problem-32"><a id="orga06b5a9"></a><span class="section-number-3">1.32</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-32">
+<p>
+Let \(G\) be a group and \(x\in G\) be an element of oder \(n>1\).
+Show that the elements in the list \(e,x,x^2,x^3,\ldots,x^{n-1}\) are
+all distinct.  Conclude that the order of an element in a group is
+doesn&rsquo;t exceed the number of elements in the group.
+</p>
+</div>
+</div>
+<div id="outline-container-org0694289" class="outline-3">
+<h3 id="hw1-problem-33"><a id="org0694289"></a><span class="section-number-3">1.33</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-33">
+<p>
+Let \(G\) be a group. Show that it must be abelian if one of the
+following holds:
+</p>
+<ol class="org-ol">
+<li>\(G\) has three elements.</li>
+<li>\(G\) has four elements.</li>
+<li>\(G\) has five elements.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org532d4b4" class="outline-3">
+<h3 id="hw1-problem-34"><a id="org532d4b4"></a><span class="section-number-3">1.34</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-34">
+<p>
+Let \(f:G\to H\) be a group homomorphism, and \(K\) be a subgroup of
+\(H\).  Prove that the preimage \(f^{-1}(K)\) is a subgroup of \(G\).
+</p>
+</div>
+</div>
+<div id="outline-container-org1671cf4" class="outline-3">
+<h3 id="hw1-problem-35"><a id="org1671cf4"></a><span class="section-number-3">1.35</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-35">
+<p>
+If \(f:G\to G\) is a homomorphismp of groups, prove that
+\(Fix(f):=\{g\in G: f(g)=g\}\) is a subgroup of \(G\).
+</p>
+</div>
+</div>
+<div id="outline-container-org314af38" class="outline-3">
+<h3 id="hw1-problem-36"><a id="org314af38"></a><span class="section-number-3">1.36</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-36">
+<p>
+Recall the construction of the set \(\mathbb{Z}/k \mathbb{Z}\) of
+sets, and the fact that it is a group under the operation defined by: for \([n],[m]\) in  \(\mathbb{Z}/k \mathbb{Z}\)
+</p>
+\begin{equation}
+  \nonumber
+  [n]+[m] := [n+m]\,.  
+\end{equation}
+<p>
+Define \(f:\mathbb{Z}\to \mathbb{Z}/k \mathbb{Z}, n\mapsto
+[n]\).  Show that \(f\) is a epimorphism.
+</p>
+</div>
+</div>
+<div id="outline-container-org53f12be" class="outline-3">
+<h3 id="hw1-problem-37"><a id="org53f12be"></a><span class="section-number-3">1.37</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-37">
+<p>
+Let \(G\) be a group and \(a\in G\) be fixed. Define \(\varphi_a:G\to
+G, x\mapsto axa^{-1}\).  Show that \(\varphi_a\) is an isomorphism (in
+this case automorphism).
+</p>
+</div>
+</div>
+<div id="outline-container-org94827ba" class="outline-3">
+<h3 id="hw1-problem-38"><a id="org94827ba"></a><span class="section-number-3">1.38</span> Problem</h3>
+<div class="outline-text-3" id="text-hw1-problem-38">
+<p>
+Consider the multiplicative group
+\(\mathbb{C}^\times:=\mathbb{C}\setminus\{0\}\).  Fix \(n\) and define
+\(P_n(z):=z^n\).  Show that \(P_n\) is a group homomorphism and
+\(\{z\in \mathbb{C}^\times : z^n=1\}\) is a subgroup of
+\(\mathbb{Z}\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf89e19b" class="outline-2">
+<h2 id="orgf89e19b"><span class="section-number-2">2</span> Week of Monday, 07. September 2020</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5f999bd" class="outline-3">
+<h3 id="hw2-problem-23"><a id="org5f999bd"></a><span class="section-number-3">2.1</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-23">
+<ol class="org-ol">
+<li><a id="org8062300"></a>Write each permutation in the cycle notation:
+<ol class="org-ol">
+<li>\(\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ 7 & 2 & 1
+      & 4 & 5 & 6 & 3 & 8 & 9 \end{pmatrix}\)</li>
+<li>\(\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ 1 & 2 & 5
+      & 4 & 7 & 6 & 9 & 3 & 8 \end{pmatrix}\)</li>
+</ol></li>
+<li>Compute each product:
+<ol class="org-ol">
+<li>\((246)(147)(135)\)</li>
+<li>\((12)(53214)(23)\)</li>
+</ol></li>
+<li><a id="orgee07a03"></a>Express as a product of disjoint cycles
+<ol class="org-ol">
+<li>\(\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+                        2 & 1 & 3 & 5 & 4 & 7 & 9 & 8 & 6
+      \end{pmatrix}\)</li>
+<li>\(\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+                        3 & 5 & 1 & 2 & 4 & 9 & 8 & 7 & 6
+      \end{pmatrix}\)</li>
+</ol></li>
+<li>Write the products in <a href="#org8062300">1</a> and <a href="#orgee07a03">3</a>
+as a product of transpositions.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5cddbe2" class="outline-3">
+<h3 id="hw2-problem-24"><a id="org5cddbe2"></a><span class="section-number-3">2.2</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-24">
+<p>
+Find the subgroup lattice of \(S_3\).  Justify your answer.
+</p>
+</div>
+</div>
+<div id="outline-container-org0281670" class="outline-3">
+<h3 id="hw2-problem-25"><a id="org0281670"></a><span class="section-number-3">2.3</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-25">
+<p>
+Let \(\sigma\) and \(\tau\) be disjoint cycles in \(S_n\).  Prove that
+\(\sigma \tau=\tau\sigma\).
+</p>
+</div>
+</div>
+<div id="outline-container-org325ae72" class="outline-3">
+<h3 id="hw2-problem-26"><a id="org325ae72"></a><span class="section-number-3">2.4</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-26">
+<p>
+Show that the subgroup \(G\) of \(S_4\) generated by the element
+\(\sigma=(1234)\) and \(\tau=(24)\) is isomorphic to \(D_8\).
+</p>
+</div>
+</div>
+<div id="outline-container-org42b5e1f" class="outline-3">
+<h3 id="hw2-problem-27"><a id="org42b5e1f"></a><span class="section-number-3">2.5</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-27">
+<p>
+Prove that the center of \(S_n\) \((n>2)\) is the identity subgroup.
+</p>
+</div>
+</div>
+<div id="outline-container-org071ae4d" class="outline-3">
+<h3 id="hw2-problem-28"><a id="org071ae4d"></a><span class="section-number-3">2.6</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-28">
+<p>
+If \(\sigma\) is a \(k\)-cycle with \(k\) odd prove that there is a
+cycle \(\tau\) such that \(\tau^2=\sigma\).
+</p>
+</div>
+</div>
+<div id="outline-container-org5e339fe" class="outline-3">
+<h3 id="hw2-problem-29"><a id="org5e339fe"></a><span class="section-number-3">2.7</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-29">
+<p>
+Let \(\sigma\) be a \(k\)-cycle in \(S_n\).
+</p>
+<ol class="org-ol">
+<li>Prove that \(\sigma^2\) is a cycle if and only if \(k\) is odd.</li>
+<li>If \(k=2t\), prove that there are \(t\)-cycles \(\tau\) and
+\(\beta\) such that \(\sigma^2=\tau\beta\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge1e2250" class="outline-3">
+<h3 id="hw2-problem-30"><a id="orge1e2250"></a><span class="section-number-3">2.8</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-30">
+<p>
+Let \(\sigma\) and \(\tau\) be transpositions in \(S_n\) with \(n\ge
+3\).  Prove that
+</p>
+<ol class="org-ol">
+<li>\(\sigma\tau\) is a product of cycles of length \(3\).</li>
+<li>every element of \(A_n\) is a product of cycles of length \(3\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1d01bf5" class="outline-3">
+<h3 id="hw2-problem-1"><a id="org1d01bf5"></a><span class="section-number-3">2.9</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-1">
+<p>
+If \(\varphi:G\to H\) is an isomorphism, prove that \(\vert
+\varphi(x)\vert =\vert x\vert \) for all \(x\in G\).  Deduce that any
+two isomorphic groups have the same number of elements of order \(n\).
+Is the result true if \(\varphi\) is only assumed to be a
+homormorphism or a monomorphism?
+</p>
+</div>
+</div>
+<div id="outline-container-org6a4d57d" class="outline-3">
+<h3 id="hw2-problem-2"><a id="org6a4d57d"></a><span class="section-number-3">2.10</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-2">
+<p>
+If \(\varphi:G\to H\) is an isomorphism, prove that \(G \) is abelian
+if and only if \(H\) is abelian.  If \(\varphi:G\to H\) is a
+homomorphism, what additional conditions on \(\varphi\) (if any) are
+sufficient to ensure that if \(G\) is abelian, then so is \(H\)?
+</p>
+</div>
+</div>
+<div id="outline-container-orgecdc3de" class="outline-3">
+<h3 id="hw2-problem-3"><a id="orgecdc3de"></a><span class="section-number-3">2.11</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-3">
+<p>
+Prove that the multiplicative groups \(\mathbb{R}\setminus\{0\}\) and
+\(\mathbb{C}\setminus\{0\}\) are not isomorphism.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb2c6dd8" class="outline-3">
+<h3 id="hw2-problem-4"><a id="orgb2c6dd8"></a><span class="section-number-3">2.12</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-4">
+<p>
+Prove that the additive groups \(\mathbb{Q}\) and \(\mathbb{R}\) are
+not ismorphic.
+</p>
+</div>
+</div>
+<div id="outline-container-org42d6bc4" class="outline-3">
+<h3 id="hw2-problem-5"><a id="org42d6bc4"></a><span class="section-number-3">2.13</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-5">
+<p>
+Prove that the additive groups \(\mathbb{Z}\) and \(\mathbb{Q}\) are
+not isomorphic.
+</p>
+</div>
+</div>
+<div id="outline-container-org7363903" class="outline-3">
+<h3 id="hw2-problem-6"><a id="org7363903"></a><span class="section-number-3">2.14</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-6">
+<p>
+Prove that if \(n\ne m\), then \(S_n\) and \(S_m\) are not isomorphic.
+</p>
+</div>
+</div>
+<div id="outline-container-org1cc8a05" class="outline-3">
+<h3 id="hw2-problem-7"><a id="org1cc8a05"></a><span class="section-number-3">2.15</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-7">
+<p>
+Prove that \(D_{24}\) and \(S_4\) are not isomorphic.
+</p>
+</div>
+</div>
+<div id="outline-container-org1e15d8d" class="outline-3">
+<h3 id="hw2-problem-8"><a id="org1e15d8d"></a><span class="section-number-3">2.16</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-8">
+<p>
+Let \(G\) and \(H\) be groups.  Prove that \(G\times H\) and \(H\times
+G\) are isomorphic.
+</p>
+</div>
+</div>
+<div id="outline-container-org2ca19ae" class="outline-3">
+<h3 id="hw2-problem-9"><a id="org2ca19ae"></a><span class="section-number-3">2.17</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-9">
+<p>
+Let \(G\) and \(H\) be groups and let \(\varphi:G\to H\) be a group
+homomorphism.  Prove that the image of \(\varphi\), \(\varphi(G)\), is
+a subgroup of \(H\).  Prove that if \(\varphi\) is injective then
+\(G\cong \varphi(G)\).
+</p>
+</div>
+</div>
+<div id="outline-container-org14f142b" class="outline-3">
+<h3 id="hw2-problem-10"><a id="org14f142b"></a><span class="section-number-3">2.18</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-10">
+<p>
+Let \(G\) and \(H\) be groups and let \(\varphi:G\to H\) be a
+homomorphism.  Define the <i>kernel</i> of \(\varphi\) to be \(\{g\in G:
+\varphi(g)=e\}\).  Prove that the kernel of \(\varphi\) is a subgroup
+of \(G\).  Prove that \(\varphi\) is injective if and only if the
+kernel of \(\varphi\) is the identity subgroup of \(G\).
+</p>
+</div>
+</div>
+<div id="outline-container-orge07d7f5" class="outline-3">
+<h3 id="hw2-problem-11"><a id="orge07d7f5"></a><span class="section-number-3">2.19</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-11">
+<p>
+Define a map \(\pi:\mathbb{R}^2\to \mathbb{R}\) by \(\pi((x,y))=x\).
+Prove that \(\pi\) is a homomorphism and find the kernel of \(\pi\),
+that is, describe the set
+</p>
+\begin{equation}
+  \nonumber
+  Ker(\pi) := \{g\in G: \pi(g)=e\}\,.
+\end{equation}
+</div>
+</div>
+<div id="outline-container-orgadc6b1c" class="outline-3">
+<h3 id="hw2-problem-12"><a id="orgadc6b1c"></a><span class="section-number-3">2.20</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-12">
+<p>
+Let \(L\) and \(M\) be groups and let \(G\) be their direct product,
+\(L\times M\).  Prove that the maps \(\pi_1:G\to L\) and \(\pi:G\to
+M\) defined by \(\pi_1((a,b))=a\) and \(\pi((a,b))=b\) are
+homomorphisms and find their kernels.
+</p>
+</div>
+</div>
+<div id="outline-container-org0ba2af8" class="outline-3">
+<h3 id="hw2-problem-13"><a id="org0ba2af8"></a><span class="section-number-3">2.21</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-13">
+<p>
+Let \(G\) be any group.  Prove that the following are equivalent:
+</p>
+<ol class="org-ol">
+<li>the map \(g\mapsto g^{-1}\) defined on \(G\) is a group
+homormophism</li>
+<li>the map \(g\mapsto g^2\) defined on \(G\) is a group homormophism</li>
+<li>\(G\) is abelian.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc92990e" class="outline-3">
+<h3 id="hw2-problem-14"><a id="orgc92990e"></a><span class="section-number-3">2.22</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-14">
+<p>
+Let \(G\) be a group and let \(Aut(G)\) be the set of all the
+isomorphisms from \(G\) onto \(G\).  Prove that \(Aut(G)\) is a group
+under function composition.
+</p>
+</div>
+</div>
+<div id="outline-container-org33302d1" class="outline-3">
+<h3 id="hw2-problem-15"><a id="org33302d1"></a><span class="section-number-3">2.23</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-15">
+<p>
+The group of automorphism of the additive group \((\mathbb{Q},+)\) is
+isomorphic to the multiplicative group
+\((\mathbb{Q}^\times,\cdot)\)<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd572472" class="outline-3">
+<h3 id="hw2-problem-16"><a id="orgd572472"></a><span class="section-number-3">2.24</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-16">
+<p>
+Let \(G\) be a finite group and let \(x\) and \(y\) be distinct
+elements of oder \(2\) in \(G\) that generate \(G\).  Prove that
+\(G\cong D_{2n}\), where \(n=\vert xy\vert\).
+</p>
+</div>
+</div>
+<div id="outline-container-org685a1f6" class="outline-3">
+<h3 id="hw2-problem-17"><a id="org685a1f6"></a><span class="section-number-3">2.25</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-17">
+<p>
+Consider the linear space \(\mathbb{R}^2\) and fix a basis
+\(((e_1,e_2))\) for it.  Define a subset \(B\) of \(GL(\mathbb{R}^2)\)
+by:
+</p>
+\begin{equation}
+  \nonumber
+  B:= \left\{\varphi\in GL(\mathbb{R}^2): \varphi(e_1)=\lambda e_1\text{ for some }\lambda \in \mathbb{R}\right\}\,.
+\end{equation}
+<ol class="org-ol">
+<li>Describe the elements of \(B\) as matrices with respect to the
+basis \(((e_1,e_2))\).</li>
+<li>Show that \(B\) is a subgroup of \(GL(\mathbb{R}^2)\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org03c2813" class="outline-3">
+<h3 id="hw2-problem-18"><a id="org03c2813"></a><span class="section-number-3">2.26</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-18">
+<p>
+Let \(R^\times\) be the multiplicative group of nonzero real numbers.
+Describe explicitly the kernel of the absolute value homomorphism
+\(x\mapsto \vert x\vert\).
+</p>
+</div>
+</div>
+<div id="outline-container-org57936ac" class="outline-3">
+<h3 id="hw2-problem-19"><a id="org57936ac"></a><span class="section-number-3">2.27</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-19">
+<p>
+Let \(\mathbb{C}^\times\) be the multiplicative group of nonzero
+complex numbers.  What is the kernel of the homomorphism absolute
+value \(z\mapsto \vert z\vert\) of \(\mathbb{C}^\times\) into
+\(\mathbb{R}^\times\).
+</p>
+</div>
+</div>
+<div id="outline-container-org72af8cd" class="outline-3">
+<h3 id="hw2-problem-20"><a id="org72af8cd"></a><span class="section-number-3">2.28</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-20">
+<p>
+Let \(G\) be a group.  Prove that \(Aut(G)\le Perm(G)\).
+</p>
+</div>
+</div>
+<div id="outline-container-org3b9e098" class="outline-3">
+<h3 id="hw2-problem-21"><a id="org3b9e098"></a><span class="section-number-3">2.29</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-21">
+<p>
+Let \(G\) be a group.  Let \(g\) be and element of \(G\).  Let
+\(\varphi_g:G\to G\) be the map such that
+</p>
+\begin{equation}
+	\nonumber
+	\varphi_g(x):=gxg^{-1}\,.
+\end{equation}
+<ol class="org-ol">
+<li>Show that \(\varphi_g:G\to G\) is an automorphism of \(G\).</li>
+<li>Show that the set of all such maps \(\varphi_g\) with \(g\in G\) is
+a subgroup of \(Aut(G)\).</li>
+<li>Show that the map \(g\mapsto \varphi_g\) is a group homomorphism.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org2569c45" class="outline-3">
+<h3 id="hw2-problem-22"><a id="org2569c45"></a><span class="section-number-3">2.30</span> Problem</h3>
+<div class="outline-text-3" id="text-hw2-problem-22">
+<p>
+Let \(G\) be a group and \(S\) be a set of generators of \(G\).  Let
+\(f:G\to G^\prime\) and \(g:G\to G^\prime\) be homormophism of \(G\)
+into the same group \(G^\prime\).  Suppose that \(f(x)=g(x)\) for all
+\(x\in S\).  Prove that \(f\equiv g\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf6298f5" class="outline-2">
+<h2 id="orgf6298f5"><span class="section-number-2">3</span> Additional Files</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li><a href="notes-on-associative-law-of-composition.pdf">On Associative Law of Composition</a> (PDF file)</li>
+</ol>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">Recall that
+\(\mathbb{Q}^\times:=\mathbb{Q}\setminus\{0\}\).</div></div>
+
+
+</div>
+</div></div>
+</body>
+</html>
