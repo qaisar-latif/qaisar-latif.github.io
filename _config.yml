@@ -1,3 +1,4 @@
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 title: Qaisar Latif’s blog
