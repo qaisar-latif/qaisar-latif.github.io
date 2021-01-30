@@ -1,6 +1,7 @@
-theme: jekyll-theme-minimal
-plugins:
-  - jekyll-feed
 title: Qaisar Latif’s blog
 description: Welcome to QL's blog
 author: Dr. Qaisar Latif
+plugins:
+  - jekyll-feed
+feed:
+  posts_limit: 50
