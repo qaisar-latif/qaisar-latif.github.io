@@ -1,4 +1,4 @@
-# Teaching (OLD)
+# Teaching
 
 ## Calculus and Linear Algebra for Graduate Students (MMM009-340181)
 
