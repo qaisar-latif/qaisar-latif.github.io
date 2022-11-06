@@ -1,0 +1,10 @@
+title: QL’s blog
+description: Welcome to QL's blog
+author: Dr. Dr. Qaisar Latif
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+feed:
+  posts_limit: 50
+
+remote_theme: pages-themes/cayman@v0.2.0
